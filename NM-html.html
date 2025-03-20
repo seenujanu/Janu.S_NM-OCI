@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="NM-css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="NM-css.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Weather Dashboard</h1>
-        <input type="text" id="city-input" placeholder="Enter city name">
-        <button id="search-button">Search</button>
-        <div id="weather-info"></div>
+  <div class="weather-container">
+    <h1>Weather Dashboard</h1>
+    <div class="search">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn">Search</button>
     </div>
-    <script src="NM-js.js"></script>
+    <div class="weather-details">
+      <p id="city-name"></p>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+      <p id="description"></p>
+      <img id="weather-icon" src="" alt="Weather Icon">
+    </div>
+  </div>
+  <script src="NM-js.js"></script>
 </body>
 </html>
